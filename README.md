@@ -2,6 +2,9 @@
 - Inherited a front-end e-commerce web application. Was tasked with replacing a monolithic API with microservices to support the inherited website.
 - The previous API had very slow response times, and could only handle around 20 requests per second.
 
+<h2>Set Up<h2>
+  <p>To set up, fork and clone this repo. CD into the repo and run ```NPM i```
+
 <h2>Tech Stack</h2>
 <div>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black" />
