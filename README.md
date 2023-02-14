@@ -3,7 +3,9 @@
 - The previous API had very slow response times, and could only handle around 20 requests per second.
 
 <h2>Set Up<h2>
-<p>The client requested the new back end be able to handle 1000 requests per second with an average response time of less than 2 seconds and an error rate of under 1%.</p>
+- First Fork and Clone the Repo
+- Run `npm install` or `npm i`
+- In the main directory, create a config.js file following the example_config.js format. Use a valid Github token. 
 
 <h2>Tech Stack</h2>
 <div>
