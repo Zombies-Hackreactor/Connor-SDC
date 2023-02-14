@@ -5,40 +5,6 @@ module.exports = {
     const questionQueryString = `SELECT * FROM questions WHERE question_id = ${questionID}`;
     return db.query(questionQueryString);
   },
-  getQandA: async (productID, page, count) => {
-    const result = {
-      product_id: productID,
-      results: [],
-    };
-    let resultObjects = [];
-
-    const questionQueryString = `SELECT * FROM questions WHERE product_id = ${productID} AND reported = false`;
-
-    await db.query(questionQueryString)
-      .then((data) => {
-        resultObjects = data.rows;
-      })
-      .catch((err) => console.log(err));
-
-    const QandA = await Promise.all(resultObjects.map((item) => {
-      const answerQuery = `SELECT * FROM answers WHERE question_id = ${item.question_id} AND answer_reported = false`;
-      return db.query(answerQuery);
-    }));
-
-    const allAnswers = QandA.map((item) => item.rows);
-
-    resultObjects.forEach((obj, i) => {
-      const answersObj = {};
-      for (let answerI = 0; answerI < allAnswers[i].length; answerI++) {
-        answersObj[allAnswers[i][answerI].answer_id] = allAnswers[i][answerI];
-      }
-      obj.answers = answersObj;
-    });
-
-    result.results = resultObjects;
-
-    return new Promise((res, rej) => res(result));
-  },
   addQuestion: (newQuestion) => {
     const inputs = Object.values(newQuestion);
     const addQuestQuery = 'INSERT INTO questions (product_id, question_body, question_date, asker_name, asker_email, reported, question_helpful) VALUES ($4, $1, current_timestamp, $2, $3, false, 0)';

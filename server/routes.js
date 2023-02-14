@@ -5,7 +5,6 @@ const answers = require('./controllers/answers');
 
 /* Question Routes */
 // router.get('/questions/:question_id', questions.getOne);
-router.get('/questions/jscompile/', questions.getAllByPID);
 router.post('/questions', questions.postQuestion);
 router.put('/questions/:question_id/helpful', questions.helpful);
 router.put('/questions/:question_id/report', questions.report);

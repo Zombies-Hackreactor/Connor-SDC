@@ -6,11 +6,6 @@ module.exports = {
       .then((data) => res.status(200).send(data.rows))
       .catch(() => res.status(400).send('Could not get Question'));
   },
-  getAllByPID: (req, res) => {
-    models.getQandA(req.query.productID, req.query.page, req.query.count)
-      .then((questionData) => res.status(200).send(questionData))
-      .catch(() => res.status(400).send('Unable to get questions'));
-  },
   postQuestion: (req, res) => {
     models.addQuestion(req.body)
       .then((data) => res.status(201).send(data))
@@ -27,6 +22,7 @@ module.exports = {
       .catch(() => res.status(400).send('Unable to report question'));
   },
   getQandASubQuery: (req, res) => {
+    console.log(req.query);
     models.getQandASubQuery(req.query.productID, req.query.page, req.query.count)
       .then((data) => {
         const returnObj = {
