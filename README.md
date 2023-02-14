@@ -3,7 +3,7 @@
 - The previous API had very slow response times, and could only handle around 20 requests per second.
 
 <h2>Set Up<h2>
-<p>To set up, fork and clone this repo. CD into the repo and run 'npm install'</p>
+<p>The client requested the new back end be able to handle 1000 requests per second with an average response time of less than 2 seconds and an error rate of under 1%.</p>
 
 <h2>Tech Stack</h2>
 <div>
