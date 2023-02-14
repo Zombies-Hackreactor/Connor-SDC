@@ -3,11 +3,11 @@
 - The previous API had very slow response times, and could only handle around 20 requests per second.
 
 <h2>Set Up<h2>
-  <p>To set up, fork and clone this repo. CD into the repo and run < /p>
+  <p>To set up, fork and clone this repo. CD into the repo and run </p>
     ```
     NPM i
     ```
-  <p></ p>
+  <p></p>
 
 <h2>Tech Stack</h2>
 <div>
@@ -19,7 +19,7 @@
   <img src="https://img.shields.io/badge/k6-7D64FF.svg?style=for-the-badge&logo=k6&logoColor=white" />
   <img src="https://img.shields.io/badge/NGINX-009639.svg?style=for-the-badge&logo=NGINX&logoColor=white" />
   <img src="https://img.shields.io/badge/New%20Relic-008C99.svg?style=for-the-badge&logo=New-Relic&logoColor=white" />
-</ div>
+</div>
 
 <h2>Results</h2>
 <h3>Goal</h3>
