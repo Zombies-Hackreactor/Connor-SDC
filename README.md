@@ -2,7 +2,7 @@
 - Inherited a front-end e-commerce web application. Was tasked with replacing a monolithic API with microservices to support the inherited website.
 - The previous API had very slow response times, and could only handle around 20 requests per second.
 
-<h2>Set Up<h2>
+## Set Up
 - First Fork and Clone the Repo
 - Run `npm install` or `npm i`
 - In the main directory, create a config.js file following the example_config.js format. Use a valid Github token. 
