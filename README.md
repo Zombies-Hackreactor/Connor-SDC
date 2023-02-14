@@ -3,7 +3,11 @@
 - The previous API had very slow response times, and could only handle around 20 requests per second.
 
 <h2>Set Up<h2>
-  <p>To set up, fork and clone this repo. CD into the repo and run ```NPM i```
+  <p>To set up, fork and clone this repo. CD into the repo and run 
+    ```
+    NPM i
+    ```
+  <p>
 
 <h2>Tech Stack</h2>
 <div>
