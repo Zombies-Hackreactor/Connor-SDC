@@ -7,7 +7,7 @@
 - Run `npm install` or `npm i`
 - In the main directory, create a config.js file following the example_config.js format. Use a valid Github token.
 - Create a `.env` file that holds your default port as `PORT` and your PostgreSQL configurations as `DB_HOST`, `DB_USER`, `DB_PASS`, `DB_PORT`, and `DB_NAME`.
-- The database will not be seeded as the data files contained ~12.5 million lines of data and were not uploaded to GitHub, but Question and Answer data can be added by way of POST routes.
+- The database will not be seeded as the data files contained ~12.5 million lines of data and were not added to GitHub, but Question and Answer data can be added by way of POST routes.
 
 <h2>Tech Stack</h2>
 <div>
